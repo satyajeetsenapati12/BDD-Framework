@@ -3,7 +3,12 @@
   <groupId>CucumberSampleFramework</groupId>
   <artifactId>CucumberSampleFramework</artifactId>
   <version>0.0.1-SNAPSHOT</version>
- 
+ <properties>
+        <utilities-systemPath>${basedir}/lib/utilities-0.0.1-SNAPSHOT.jar</utilities-systemPath>
+		<ActionPerformer-systemPath>${basedir}/lib/ActionPerformer2.jar</ActionPerformer-systemPath>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
   <dependencies>
 	
 	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
@@ -12,6 +17,13 @@
     <artifactId>cucumber-java</artifactId>
     <version>7.20.1</version>
 </dependency>
+<dependency>
+            <groupId>ActionPerformer</groupId>
+            <artifactId>ActionPerformer</artifactId>
+            <scope>system</scope>
+            <version>1.6</version>
+            <systemPath>${basedir}/lib/ActionPerformer2.jar</systemPath>
+        </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
@@ -44,11 +56,7 @@
 </dependency>
 
 
-  	<dependency>
-  		<groupId>Uber</groupId>
-  		<artifactId>Uber</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
+  
   	<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
@@ -73,6 +81,49 @@
     <artifactId>poi-ooxml-schemas</artifactId>
     <version>4.1.2</version>
 </dependency>
+
+
+  	
+  	
+  	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.10.2</version>
+    <scope>test</scope>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+<dependency>
+    <groupId>com.relevantcodes</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>2.41.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
+<dependency>
+    <groupId>tech.grasshopper</groupId>
+    <artifactId>extentreports-cucumber7-adapter</artifactId>
+    <version>1.14.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/tech.grasshopper/cucumber-pdf-report -->
+<dependency>
+    <groupId>tech.grasshopper</groupId>
+    <artifactId>cucumber-pdf-report</artifactId>
+    <version>2.14.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+<dependency>
+    <groupId>net.masterthought</groupId>
+    <artifactId>cucumber-reporting</artifactId>
+    <version>5.8.4</version>
+</dependency>
+
 
 
   </dependencies>
